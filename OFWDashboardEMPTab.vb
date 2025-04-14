@@ -28,4 +28,8 @@
         Close()
         btnOFWDashOFW.Show()
     End Sub
+
+    Private Sub btnOFWDashEMP_Click(sender As Object, e As EventArgs) Handles btnOFWDashEMP.Click
+
+    End Sub
 End Class

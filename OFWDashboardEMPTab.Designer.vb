@@ -45,9 +45,9 @@ Partial Class OFWDashboardEMPTab
         Panel1.Controls.Add(btnOFWDashAGC)
         Panel1.Controls.Add(btnOFWDashEMP)
         Panel1.ForeColor = SystemColors.ControlText
-        Panel1.Location = New Point(-1, -34)
+        Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(342, 803)
+        Panel1.Size = New Size(342, 1080)
         Panel1.TabIndex = 5
         ' 
         ' btnOFWDashSTAT
@@ -55,19 +55,19 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashSTAT.BackColor = Color.RoyalBlue
         btnOFWDashSTAT.FlatAppearance.BorderSize = 0
         btnOFWDashSTAT.FlatStyle = FlatStyle.Flat
-        btnOFWDashSTAT.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashSTAT.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashSTAT.ForeColor = Color.MidnightBlue
-        btnOFWDashSTAT.Location = New Point(52, 724)
+        btnOFWDashSTAT.Location = New Point(52, 690)
         btnOFWDashSTAT.Name = "btnOFWDashSTAT"
-        btnOFWDashSTAT.Size = New Size(237, 45)
+        btnOFWDashSTAT.Size = New Size(240, 50)
         btnOFWDashSTAT.TabIndex = 45
-        btnOFWDashSTAT.Text = "Statistics"
+        btnOFWDashSTAT.Text = "STATISTICS"
         btnOFWDashSTAT.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.Untitled_design__8_
-        PictureBox1.Location = New Point(12, 46)
+        PictureBox1.Location = New Point(15, 16)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(314, 335)
         PictureBox1.TabIndex = 1
@@ -78,13 +78,13 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashDEP.BackColor = Color.RoyalBlue
         btnOFWDashDEP.FlatAppearance.BorderSize = 0
         btnOFWDashDEP.FlatStyle = FlatStyle.Flat
-        btnOFWDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashDEP.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashDEP.ForeColor = Color.MidnightBlue
-        btnOFWDashDEP.Location = New Point(52, 660)
+        btnOFWDashDEP.Location = New Point(52, 626)
         btnOFWDashDEP.Name = "btnOFWDashDEP"
-        btnOFWDashDEP.Size = New Size(237, 45)
+        btnOFWDashDEP.Size = New Size(240, 50)
         btnOFWDashDEP.TabIndex = 44
-        btnOFWDashDEP.Text = "Deployments"
+        btnOFWDashDEP.Text = "DEPLOYMENT"
         btnOFWDashDEP.UseVisualStyleBackColor = False
         ' 
         ' btnOFWDashJOB
@@ -92,13 +92,13 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashJOB.BackColor = Color.RoyalBlue
         btnOFWDashJOB.FlatAppearance.BorderSize = 0
         btnOFWDashJOB.FlatStyle = FlatStyle.Flat
-        btnOFWDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashJOB.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashJOB.ForeColor = Color.MidnightBlue
-        btnOFWDashJOB.Location = New Point(52, 595)
+        btnOFWDashJOB.Location = New Point(52, 561)
         btnOFWDashJOB.Name = "btnOFWDashJOB"
-        btnOFWDashJOB.Size = New Size(237, 45)
+        btnOFWDashJOB.Size = New Size(240, 50)
         btnOFWDashJOB.TabIndex = 43
-        btnOFWDashJOB.Text = "Job Placements"
+        btnOFWDashJOB.Text = "JOB PLACEMENT"
         btnOFWDashJOB.UseVisualStyleBackColor = False
         ' 
         ' btnOFWDashOFW
@@ -106,13 +106,13 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashOFW.BackColor = Color.RoyalBlue
         btnOFWDashOFW.FlatAppearance.BorderSize = 0
         btnOFWDashOFW.FlatStyle = FlatStyle.Flat
-        btnOFWDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashOFW.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashOFW.ForeColor = Color.MidnightBlue
-        btnOFWDashOFW.Location = New Point(52, 405)
+        btnOFWDashOFW.Location = New Point(52, 371)
         btnOFWDashOFW.Name = "btnOFWDashOFW"
-        btnOFWDashOFW.Size = New Size(237, 45)
+        btnOFWDashOFW.Size = New Size(240, 50)
         btnOFWDashOFW.TabIndex = 40
-        btnOFWDashOFW.Text = "OFWs"
+        btnOFWDashOFW.Text = "OFW"
         btnOFWDashOFW.UseVisualStyleBackColor = False
         ' 
         ' btnOFWDashAGC
@@ -120,13 +120,13 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashAGC.BackColor = Color.RoyalBlue
         btnOFWDashAGC.FlatAppearance.BorderSize = 0
         btnOFWDashAGC.FlatStyle = FlatStyle.Flat
-        btnOFWDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashAGC.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashAGC.ForeColor = Color.MidnightBlue
-        btnOFWDashAGC.Location = New Point(52, 528)
+        btnOFWDashAGC.Location = New Point(52, 494)
         btnOFWDashAGC.Name = "btnOFWDashAGC"
-        btnOFWDashAGC.Size = New Size(237, 45)
+        btnOFWDashAGC.Size = New Size(240, 50)
         btnOFWDashAGC.TabIndex = 42
-        btnOFWDashAGC.Text = "Agencies"
+        btnOFWDashAGC.Text = "AGENCY"
         btnOFWDashAGC.UseVisualStyleBackColor = False
         ' 
         ' btnOFWDashEMP
@@ -134,13 +134,13 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashEMP.BackColor = Color.DeepSkyBlue
         btnOFWDashEMP.FlatAppearance.BorderSize = 0
         btnOFWDashEMP.FlatStyle = FlatStyle.Flat
-        btnOFWDashEMP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashEMP.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
         btnOFWDashEMP.ForeColor = Color.MidnightBlue
-        btnOFWDashEMP.Location = New Point(52, 467)
+        btnOFWDashEMP.Location = New Point(52, 433)
         btnOFWDashEMP.Name = "btnOFWDashEMP"
-        btnOFWDashEMP.Size = New Size(290, 45)
+        btnOFWDashEMP.Size = New Size(289, 50)
         btnOFWDashEMP.TabIndex = 41
-        btnOFWDashEMP.Text = "Employers"
+        btnOFWDashEMP.Text = "EMPLOYER"
         btnOFWDashEMP.UseVisualStyleBackColor = False
         ' 
         ' OFWDashboardEMPTab
@@ -148,13 +148,12 @@ Partial Class OFWDashboardEMPTab
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1366, 768)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "OFWDashboardEMPTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "OFWDashboardEMPTab"
-        WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
