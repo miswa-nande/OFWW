@@ -30,6 +30,7 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashOFW = New Button()
         btnOFWDashAGC = New Button()
         btnOFWDashEMP = New Button()
+        btnExit = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -143,12 +144,28 @@ Partial Class OFWDashboardEMPTab
         btnOFWDashEMP.Text = "EMPLOYER"
         btnOFWDashEMP.UseVisualStyleBackColor = False
         ' 
+        ' btnExit
+        ' 
+        btnExit.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnExit.BackColor = Color.Crimson
+        btnExit.FlatStyle = FlatStyle.Popup
+        btnExit.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnExit.ForeColor = Color.DeepSkyBlue
+        btnExit.Location = New Point(1857, 3)
+        btnExit.Margin = New Padding(4)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(60, 53)
+        btnExit.TabIndex = 30
+        btnExit.Text = "X"
+        btnExit.UseVisualStyleBackColor = False
+        ' 
         ' OFWDashboardEMPTab
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(btnExit)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "OFWDashboardEMPTab"
@@ -167,4 +184,5 @@ Partial Class OFWDashboardEMPTab
     Friend WithEvents btnOFWDashOFW As Button
     Friend WithEvents btnOFWDashAGC As Button
     Friend WithEvents btnOFWDashEMP As Button
+    Friend WithEvents btnExit As Button
 End Class

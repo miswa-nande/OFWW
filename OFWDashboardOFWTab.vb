@@ -30,4 +30,11 @@
         btnOFWDashSTAT.Show()
     End Sub
 
+    Private Sub btnOFWDashOFW_Click(sender As Object, e As EventArgs) Handles btnOFWDashOFW.Click
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Application.Exit()
+    End Sub
 End Class
