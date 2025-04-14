@@ -97,26 +97,9 @@ Public Class OFWloginPage
         End Try
     End Sub
 
-    ' Other event handlers...
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles imgLoginPg.Click
-        ' Handle the picture box click event here if needed
-    End Sub
-
-    Private Sub btnCloseLoginPg_Click(sender As Object, e As EventArgs) Handles btnCloseLoginPg.Click
+    ' method for closing page
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
-    End Sub
-
-    Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs)
-        Dim ADMLoginPage As New ADMloginPage
-        Hide()
-        ADMLoginPage.Show()
-    End Sub
-
-    Private Sub btnAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnAGCLoginPg.Click
-        Dim AGCLoginPage As New AGENCYLoginPage()
-        Me.Hide()
-        AGCLoginPage.Show()
     End Sub
 
     Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -124,14 +107,18 @@ Public Class OFWloginPage
         openConn(db_name)
     End Sub
 
-    Private Sub btnEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnEMPLoginPg.Click
-        Dim EMPLoginPage As New EMPLoginPage()
-        Me.Hide()
-        EMPLoginPage.Show()
+    'method for opening agency login page
+    Private Sub btnAGCLoginPg_Click(sender As Object, e As EventArgs)
+        Dim AGCLoginPage As New AGENCYLoginPage
+        Hide()
+        AGCLoginPage.Show()
     End Sub
 
-    Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
-        ' Handle the button click event here if needed
+    ' method for opening employee login page
+    Private Sub btnEMPLoginPg_Click(sender As Object, e As EventArgs)
+        Dim EMPLoginPage As New EMPLoginPage
+        Hide()
+        EMPLoginPage.Show()
     End Sub
 
     Private Sub btnOkOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkOFWLoginPg.Click
@@ -185,11 +172,5 @@ Public Class OFWloginPage
         ' If no match, return False (invalid login)
         Return False
     End Function
-
-
-
-
-
-
 
 End Class

@@ -21,6 +21,13 @@ Public Class AGENCYLoginPage
         End If
     End Sub
 
+    ' Method to open the admin login page
+    Private Sub OpenAdminLoginPage()
+        Dim ADMLoginPage As New ADMloginPage()
+        Me.Hide()
+        ADMLoginPage.Show()
+    End Sub
+
     ' Method to update the config.txt file
     Private Sub UpdateConfigFile()
         Dim filePath As String = "config.txt"
@@ -83,49 +90,44 @@ Public Class AGENCYLoginPage
             MessageBox.Show($"An error occurred while reloading the page: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    ' Method to open the admin login page
-    Private Sub OpenAdminLoginPage()
-        Dim ADMLoginPage As New ADMloginPage()
-        Me.Hide()
-        ADMLoginPage.Show()
-    End Sub
 
-    ' Event handlers for buttons
-    Private Sub btnCloseLoginPg_Click(sender As Object, e As EventArgs) Handles btnCloseLoginPg.Click
-        Application.Exit()
-    End Sub
 
+    ' method for opening ofw login page
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
         Dim OFWLoginPage As New OFWloginPage()
         Me.Hide()
         OFWLoginPage.Show()
     End Sub
 
-    Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs)
-        Dim ADMLoginPage As New ADMloginPage
-        Hide()
-        ADMLoginPage.Show()
-    End Sub
+    ''method for opening admin login page
+    'Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs)
+    '    Dim ADMLoginPage As New ADMloginPage
+    '    Hide()
+    '    ADMLoginPage.Show()
+    'End Sub
 
+    ' method for opening employee login page
     Private Sub btnEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnEMPLoginPg.Click
         Dim EMPLoginPage As New EMPLoginPage()
         Me.Hide()
         EMPLoginPage.Show()
     End Sub
 
+    ' method for opening agency login page
     Private Sub btnAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnAGCLoginPg.Click
         Dim AGCLoginPage As New AGENCYLoginPage()
         Me.Hide()
         AGCLoginPage.Show()
     End Sub
 
-    ' Placeholder for other page load logic
-    Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    ' method for closing page
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Application.Exit()
     End Sub
 
-    Private Sub imgLogoLoginPg_Click(sender As Object, e As EventArgs) Handles imgLogoLoginPg.Click
-
+    Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UpdateConnectionString()
+        openConn(db_name)
     End Sub
 
     Private Sub btnOkAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkAGCLoginPg.Click
@@ -181,6 +183,7 @@ Public Class AGENCYLoginPage
         Return False
     End Function
 
+    Private Sub txtbxAGCIdLogin_TextChanged(sender As Object, e As EventArgs) Handles txtbxAGCIdLogin.TextChanged
 
-
+    End Sub
 End Class

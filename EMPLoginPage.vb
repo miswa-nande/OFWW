@@ -21,6 +21,13 @@ Public Class EMPLoginPage
         End If
     End Sub
 
+    ' Method to open the admin login page
+    Private Sub OpenAdminLoginPage()
+        Dim ADMLoginPage As New ADMloginPage()
+        Me.Hide()
+        ADMLoginPage.Show()
+    End Sub
+
     ' Method to update the config.txt file
     Private Sub UpdateConfigFile()
         Dim filePath As String = "config.txt"
@@ -85,13 +92,6 @@ Public Class EMPLoginPage
         End Try
     End Sub
 
-    ' Method to open the admin login page
-    Private Sub OpenAdminLoginPage()
-        Dim ADMLoginPage As New ADMloginPage()
-        Me.Hide()
-        ADMLoginPage.Show()
-    End Sub
-
     ' Event handlers for buttons
     Private Sub btnAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnAGCLoginPg.Click
         Dim AGCLoginPage As New AGENCYLoginPage()
@@ -99,12 +99,9 @@ Public Class EMPLoginPage
         AGCLoginPage.Show()
     End Sub
 
-    Private Sub btnCloseLoginPg_Click(sender As Object, e As EventArgs) Handles btnCloseLoginPg.Click
-        Application.Exit()
-    End Sub
-
     Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        UpdateConnectionString()
+        openConn(db_name)
     End Sub
 
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
@@ -112,12 +109,28 @@ Public Class EMPLoginPage
         Me.Hide()
         OFWLoginPage.Show()
     End Sub
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Application.Exit()
+    End Sub
 
     Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs)
         Dim ADMLoginPage As New ADMloginPage
         Hide()
         ADMLoginPage.Show()
     End Sub
+
+    Private Sub txtEMPPassLogin_TextChanged(sender As Object, e As EventArgs) Handles txtEMPPassLogin.TextChanged
+        ' You can add logic here for when the text in the password box changes
+        ' For example, you can enable/disable a button based on the input
+        If txtEMPPassLogin.Text.Length > 0 Then
+            ' Enable the button if there is text
+            btnOkEMPLoginPg.Enabled = True
+        Else
+            ' Disable the button if no text is entered
+            btnOkEMPLoginPg.Enabled = False
+        End If
+    End Sub
+
 
     Private Sub btnOkEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkEMPLoginPg.Click
         ' Retrieve values from the login form

@@ -46,7 +46,6 @@ Partial Class OFWDashboard
         ' 
         bg.BackgroundImage = CType(resources.GetObject("bg.BackgroundImage"), Image)
         bg.Location = New Point(0, 0)
-        bg.Margin = New Padding(4)
         bg.Name = "bg"
         bg.Size = New Size(1920, 1080)
         bg.TabIndex = 0
@@ -54,10 +53,9 @@ Partial Class OFWDashboard
         ' 
         ' OFWpic
         ' 
-        OFWpic.Location = New Point(82, 63)
-        OFWpic.Margin = New Padding(4)
+        OFWpic.Location = New Point(64, 45)
         OFWpic.Name = "OFWpic"
-        OFWpic.Size = New Size(270, 294)
+        OFWpic.Size = New Size(210, 210)
         OFWpic.TabIndex = 1
         OFWpic.TabStop = False
         ' 
@@ -65,11 +63,10 @@ Partial Class OFWDashboard
         ' 
         lblFName.AutoSize = True
         lblFName.BackColor = Color.DeepSkyBlue
-        lblFName.Font = New Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblFName.Location = New Point(396, 87)
-        lblFName.Margin = New Padding(4, 0, 4, 0)
+        lblFName.Font = New Font("Segoe UI", 16.2F)
+        lblFName.Location = New Point(308, 62)
         lblFName.Name = "lblFName"
-        lblFName.Size = New Size(294, 43)
+        lblFName.Size = New Size(164, 30)
         lblFName.TabIndex = 2
         lblFName.Text = "Full Name Here"
         ' 
@@ -77,11 +74,10 @@ Partial Class OFWDashboard
         ' 
         IDNum.AutoSize = True
         IDNum.BackColor = Color.DeepSkyBlue
-        IDNum.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        IDNum.Location = New Point(396, 133)
-        IDNum.Margin = New Padding(4, 0, 4, 0)
+        IDNum.Font = New Font("Segoe UI", 16.2F)
+        IDNum.Location = New Point(308, 95)
         IDNum.Name = "IDNum"
-        IDNum.Size = New Size(160, 32)
+        IDNum.Size = New Size(136, 30)
         IDNum.TabIndex = 3
         IDNum.Text = "OFW-#####"
         ' 
@@ -89,11 +85,10 @@ Partial Class OFWDashboard
         ' 
         Address.AutoSize = True
         Address.BackColor = Color.DeepSkyBlue
-        Address.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Address.Location = New Point(534, 192)
-        Address.Margin = New Padding(4, 0, 4, 0)
+        Address.Font = New Font("Segoe UI", 16.2F)
+        Address.Location = New Point(405, 134)
         Address.Name = "Address"
-        Address.Size = New Size(242, 32)
+        Address.Size = New Size(177, 30)
         Address.TabIndex = 4
         Address.Text = "Full address here"
         ' 
@@ -101,11 +96,10 @@ Partial Class OFWDashboard
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.DeepSkyBlue
-        Label2.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(396, 225)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Font = New Font("Segoe UI", 16.2F)
+        Label2.Location = New Point(308, 164)
         Label2.Name = "Label2"
-        Label2.Size = New Size(94, 32)
+        Label2.Size = New Size(69, 30)
         Label2.TabIndex = 5
         Label2.Text = "Email:"
         ' 
@@ -114,10 +108,9 @@ Partial Class OFWDashboard
         EmploymentStat.AutoSize = True
         EmploymentStat.BackColor = Color.DeepSkyBlue
         EmploymentStat.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        EmploymentStat.Location = New Point(499, 308)
-        EmploymentStat.Margin = New Padding(4, 0, 4, 0)
+        EmploymentStat.Location = New Point(388, 220)
         EmploymentStat.Name = "EmploymentStat"
-        EmploymentStat.Size = New Size(481, 32)
+        EmploymentStat.Size = New Size(374, 24)
         EmploymentStat.TabIndex = 6
         EmploymentStat.Text = "Employed, Unemployed, or Pending"
         ' 
@@ -125,11 +118,10 @@ Partial Class OFWDashboard
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.DeepSkyBlue
-        Label1.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(396, 192)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(308, 134)
         Label1.Name = "Label1"
-        Label1.Size = New Size(133, 32)
+        Label1.Size = New Size(96, 30)
         Label1.TabIndex = 7
         Label1.Text = "Address:"
         ' 
@@ -137,11 +129,10 @@ Partial Class OFWDashboard
         ' 
         OFWEmail.AutoSize = True
         OFWEmail.BackColor = Color.DeepSkyBlue
-        OFWEmail.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        OFWEmail.Location = New Point(499, 225)
-        OFWEmail.Margin = New Padding(4, 0, 4, 0)
+        OFWEmail.Font = New Font("Segoe UI", 16.2F)
+        OFWEmail.Location = New Point(405, 161)
         OFWEmail.Name = "OFWEmail"
-        OFWEmail.Size = New Size(268, 32)
+        OFWEmail.Size = New Size(195, 30)
         OFWEmail.TabIndex = 8
         OFWEmail.Text = "Email address here"
         ' 
@@ -150,10 +141,9 @@ Partial Class OFWDashboard
         Label3.AutoSize = True
         Label3.BackColor = Color.DeepSkyBlue
         Label3.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(396, 308)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Location = New Point(308, 220)
         Label3.Name = "Label3"
-        Label3.Size = New Size(107, 32)
+        Label3.Size = New Size(81, 24)
         Label3.TabIndex = 9
         Label3.Text = "Status:"
         ' 
@@ -161,22 +151,20 @@ Partial Class OFWDashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.DeepSkyBlue
-        Label4.Font = New Font("Arial Rounded MT Bold", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(82, 455)
-        Label4.Margin = New Padding(4, 0, 4, 0)
+        Label4.Font = New Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(66, 316)
         Label4.Name = "Label4"
-        Label4.Size = New Size(605, 93)
+        Label4.Size = New Size(421, 86)
         Label4.TabIndex = 10
         Label4.Text = "JOB LISTINGS"
         ' 
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(82, 552)
-        DataGridView1.Margin = New Padding(4)
+        DataGridView1.Location = New Point(64, 394)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1838, 528)
+        DataGridView1.Size = New Size(1430, 377)
         DataGridView1.TabIndex = 11
         ' 
         ' btnApply
@@ -185,10 +173,9 @@ Partial Class OFWDashboard
         btnApply.FlatStyle = FlatStyle.Popup
         btnApply.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnApply.ForeColor = Color.DarkBlue
-        btnApply.Location = New Point(2151, 1390)
-        btnApply.Margin = New Padding(4)
+        btnApply.Location = New Point(1673, 993)
         btnApply.Name = "btnApply"
-        btnApply.Size = New Size(280, 76)
+        btnApply.Size = New Size(218, 54)
         btnApply.TabIndex = 12
         btnApply.Text = "APPLY JOB"
         btnApply.UseVisualStyleBackColor = False
@@ -199,17 +186,16 @@ Partial Class OFWDashboard
         logout.FlatStyle = FlatStyle.Popup
         logout.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         logout.ForeColor = SystemColors.ActiveCaptionText
-        logout.Location = New Point(2354, 17)
-        logout.Margin = New Padding(4)
+        logout.Location = New Point(1831, 12)
         logout.Name = "logout"
-        logout.Size = New Size(99, 45)
+        logout.Size = New Size(77, 32)
         logout.TabIndex = 13
         logout.Text = "LOGOUT"
         logout.UseVisualStyleBackColor = False
         ' 
         ' OFWDashboard
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1920, 1080)
         Controls.Add(logout)
@@ -227,11 +213,9 @@ Partial Class OFWDashboard
         Controls.Add(OFWpic)
         Controls.Add(bg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4)
         Name = "OFWDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "OFWDashboard"
-        WindowState = FormWindowState.Maximized
         CType(bg, ComponentModel.ISupportInitialize).EndInit()
         CType(OFWpic, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()

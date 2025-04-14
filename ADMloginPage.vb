@@ -2,19 +2,19 @@
 
 Public Class ADMloginPage
 
-    Public Sub New()
-        InitializeComponent()
-        Me.KeyPreview = True ' Ensure the form captures key events
-        AddHandler Me.KeyDown, AddressOf ADMloginPage_KeyDown
-    End Sub
+    'Public Sub New()
+    '    InitializeComponent()
+    '    Me.KeyPreview = True ' Ensure the form captures key events
+    '    AddHandler Me.KeyDown, AddressOf ADMloginPage_KeyDown
+    'End Sub
 
-    ' Event handler for Shift + F key press
-    Private Sub ADMloginPage_KeyDown(sender As Object, e As KeyEventArgs)
-        ' Check if Shift + F is pressed
-        If e.Shift AndAlso e.KeyCode = Keys.F Then
-            UpdateConfigFile()
-        End If
-    End Sub
+    '' Event handler for Shift + F key press
+    'Private Sub ADMloginPage_KeyDown(sender As Object, e As KeyEventArgs)
+    '    ' Check if Shift + F is pressed
+    '    If e.Shift AndAlso e.KeyCode = Keys.F Then
+    '        UpdateConfigFile()
+    '    End If
+    'End Sub
 
     ' Method to update the config.txt file
     Private Sub UpdateConfigFile()
@@ -80,17 +80,6 @@ Public Class ADMloginPage
         End Try
     End Sub
 
-    ' Other event handlers
-    Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
-        Dim OFWLoginPage As New OFWloginPage()
-        Me.Close()
-        OFWLoginPage.Show()
-    End Sub
-
-    Private Sub btnCloseLoginPg_Click(sender As Object, e As EventArgs) Handles btnCloseLoginPg.Click
-        Application.Exit()
-    End Sub
-
     Private Sub Login_Click(sender As Object, e As EventArgs) Handles btnLoginADMLoginPg.Click
         If txtbxADMUserLoginPg.Text.ToLower = "admin" AndAlso
            txtbxADMPassLoginPg.Text.ToLower = "admin" Then
@@ -105,23 +94,35 @@ Public Class ADMloginPage
         End If
     End Sub
 
-    Private Sub ADMloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    ' method for opening ofw login page
+    Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
+        Dim OFWLoginPage As New OFWloginPage()
+        Me.Close()
+        OFWLoginPage.Show()
     End Sub
 
+    'method for opening agency login page
     Private Sub btnAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnAGCLoginPg.Click
         Dim AGCLoginPage As New AGENCYLoginPage()
         Me.Hide()
         AGCLoginPage.Show()
     End Sub
 
+    ' method for opening employee login page
     Private Sub btnEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnEMPLoginPg.Click
         Dim EMPLoginPage As New EMPLoginPage()
         Me.Hide()
         EMPLoginPage.Show()
     End Sub
 
-    Private Sub imgLoginPg_Click(sender As Object, e As EventArgs) Handles imgLoginPg.Click
-
+    Private Sub ADMloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UpdateConnectionString()
+        openConn(db_name)
     End Sub
+
+    ' method for closing page
+    Private Sub btnCloseLoginPg_Click(sender As Object, e As EventArgs)
+        Application.Exit
+    End Sub
+
 End Class

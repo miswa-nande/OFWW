@@ -25,76 +25,64 @@ Partial Class AGENCYLoginPage
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AGENCYLoginPage))
         btnOkAGCLoginPg = New Button()
         txtbxAGCIdLogin = New TextBox()
-        Label1 = New Label()
-        btnCloseLoginPg = New Button()
+        btnExit = New Button()
         btnEMPLoginPg = New Button()
         btnAGCLoginPg = New Button()
         btnOFWLoginPg = New Button()
         imgLogoLoginPg = New PictureBox()
         imgLoginPg = New PictureBox()
-        Label2 = New Label()
         txtAGCPassLogin = New TextBox()
+        LinkLabel1 = New LinkLabel()
+        Label2 = New Label()
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnOkAGCLoginPg
         ' 
+        btnOkAGCLoginPg.BackColor = Color.DeepSkyBlue
         btnOkAGCLoginPg.FlatStyle = FlatStyle.Popup
-        btnOkAGCLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkAGCLoginPg.Location = New Point(1250, 546)
-        btnOkAGCLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOkAGCLoginPg.Font = New Font("Segoe UI", 13.8F)
+        btnOkAGCLoginPg.Location = New Point(1426, 785)
         btnOkAGCLoginPg.Name = "btnOkAGCLoginPg"
-        btnOkAGCLoginPg.Size = New Size(60, 52)
+        btnOkAGCLoginPg.Size = New Size(90, 44)
         btnOkAGCLoginPg.TabIndex = 31
-        btnOkAGCLoginPg.Text = "OK"
-        btnOkAGCLoginPg.UseVisualStyleBackColor = True
+        btnOkAGCLoginPg.Text = "Log In"
+        btnOkAGCLoginPg.UseVisualStyleBackColor = False
         ' 
         ' txtbxAGCIdLogin
         ' 
-        txtbxAGCIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxAGCIdLogin.Location = New Point(1115, 414)
-        txtbxAGCIdLogin.Margin = New Padding(4, 4, 4, 4)
+        txtbxAGCIdLogin.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxAGCIdLogin.Location = New Point(1394, 642)
         txtbxAGCIdLogin.Name = "txtbxAGCIdLogin"
-        txtbxAGCIdLogin.PlaceholderText = "AGC-#####"
-        txtbxAGCIdLogin.Size = New Size(187, 35)
+        txtbxAGCIdLogin.PlaceholderText = "ID number"
+        txtbxAGCIdLogin.Size = New Size(150, 32)
         txtbxAGCIdLogin.TabIndex = 30
         ' 
-        ' Label1
+        ' btnExit
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(1115, 377)
-        Label1.Margin = New Padding(4, 0, 4, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(121, 29)
-        Label1.TabIndex = 29
-        Label1.Text = "Agency ID"
-        ' 
-        ' btnCloseLoginPg
-        ' 
-        btnCloseLoginPg.BackColor = Color.Crimson
-        btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        btnCloseLoginPg.Location = New Point(1804, 15)
-        btnCloseLoginPg.Margin = New Padding(4, 6, 4, 6)
-        btnCloseLoginPg.Name = "btnCloseLoginPg"
-        btnCloseLoginPg.Size = New Size(103, 74)
-        btnCloseLoginPg.TabIndex = 27
-        btnCloseLoginPg.Text = "CLOSE"
-        btnCloseLoginPg.UseVisualStyleBackColor = False
+        btnExit.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnExit.BackColor = Color.Crimson
+        btnExit.FlatStyle = FlatStyle.Popup
+        btnExit.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold)
+        btnExit.ForeColor = Color.DeepSkyBlue
+        btnExit.Location = New Point(1857, 3)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(60, 53)
+        btnExit.TabIndex = 27
+        btnExit.Text = "X"
+        btnExit.UseVisualStyleBackColor = False
         ' 
         ' btnEMPLoginPg
         ' 
         btnEMPLoginPg.BackColor = Color.FromArgb(CByte(7), CByte(30), CByte(34))
         btnEMPLoginPg.FlatStyle = FlatStyle.Popup
-        btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        btnEMPLoginPg.Font = New Font("Segoe UI", 13.8F)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnEMPLoginPg.Location = New Point(1571, 1018)
-        btnEMPLoginPg.Margin = New Padding(4, 6, 4, 6)
+        btnEMPLoginPg.Location = New Point(1536, 906)
+        btnEMPLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
-        btnEMPLoginPg.Size = New Size(240, 105)
+        btnEMPLoginPg.Size = New Size(125, 46)
         btnEMPLoginPg.TabIndex = 26
         btnEMPLoginPg.Text = "EMPLOYER"
         btnEMPLoginPg.UseVisualStyleBackColor = False
@@ -103,12 +91,12 @@ Partial Class AGENCYLoginPage
         ' 
         btnAGCLoginPg.BackColor = Color.FromArgb(CByte(7), CByte(30), CByte(34))
         btnAGCLoginPg.FlatStyle = FlatStyle.Popup
-        btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        btnAGCLoginPg.Font = New Font("Segoe UI", 13.8F)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnAGCLoginPg.Location = New Point(1261, 1018)
-        btnAGCLoginPg.Margin = New Padding(4, 6, 4, 6)
+        btnAGCLoginPg.Location = New Point(1274, 906)
+        btnAGCLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
-        btnAGCLoginPg.Size = New Size(240, 105)
+        btnAGCLoginPg.Size = New Size(125, 46)
         btnAGCLoginPg.TabIndex = 25
         btnAGCLoginPg.Text = "AGENCY"
         btnAGCLoginPg.UseVisualStyleBackColor = False
@@ -117,81 +105,87 @@ Partial Class AGENCYLoginPage
         ' 
         btnOFWLoginPg.BackColor = Color.FromArgb(CByte(7), CByte(30), CByte(34))
         btnOFWLoginPg.FlatStyle = FlatStyle.Popup
-        btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnOFWLoginPg.Font = New Font("Segoe UI", 13.8F)
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnOFWLoginPg.Location = New Point(950, 1018)
-        btnOFWLoginPg.Margin = New Padding(4, 6, 4, 6)
+        btnOFWLoginPg.Location = New Point(1405, 906)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
-        btnOFWLoginPg.Size = New Size(240, 105)
+        btnOFWLoginPg.Size = New Size(125, 46)
         btnOFWLoginPg.TabIndex = 24
         btnOFWLoginPg.Text = "OFW"
         btnOFWLoginPg.UseVisualStyleBackColor = False
         ' 
         ' imgLogoLoginPg
         ' 
-        imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
-        imgLogoLoginPg.Location = New Point(1084, 351)
-        imgLogoLoginPg.Margin = New Padding(4, 6, 4, 6)
+        imgLogoLoginPg.Image = My.Resources.Resources.logo__1_
+        imgLogoLoginPg.Location = New Point(1227, 120)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
-        imgLogoLoginPg.Size = New Size(557, 693)
+        imgLogoLoginPg.Size = New Size(480, 502)
         imgLogoLoginPg.TabIndex = 23
         imgLogoLoginPg.TabStop = False
         ' 
         ' imgLoginPg
         ' 
         imgLoginPg.Image = CType(resources.GetObject("imgLoginPg.Image"), Image)
-        imgLoginPg.Location = New Point(0, -1)
-        imgLoginPg.Margin = New Padding(4, 6, 4, 6)
+        imgLoginPg.Location = New Point(0, 0)
         imgLoginPg.Name = "imgLoginPg"
-        imgLoginPg.Size = New Size(984, 1439)
+        imgLoginPg.Size = New Size(1920, 1080)
+        imgLoginPg.SizeMode = PictureBoxSizeMode.StretchImage
         imgLoginPg.TabIndex = 22
         imgLoginPg.TabStop = False
+        ' 
+        ' txtAGCPassLogin
+        ' 
+        txtAGCPassLogin.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtAGCPassLogin.Location = New Point(1394, 680)
+        txtAGCPassLogin.Name = "txtAGCPassLogin"
+        txtAGCPassLogin.PlaceholderText = "Password"
+        txtAGCPassLogin.Size = New Size(150, 32)
+        txtAGCPassLogin.TabIndex = 33
+        txtAGCPassLogin.UseSystemPasswordChar = True
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Segoe UI", 12F)
+        LinkLabel1.Location = New Point(1540, 755)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(58, 21)
+        LinkLabel1.TabIndex = 35
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Sign In"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1115, 459)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Font = New Font("Segoe UI", 12F)
+        Label2.Location = New Point(1348, 755)
         Label2.Name = "Label2"
-        Label2.Size = New Size(120, 29)
-        Label2.TabIndex = 32
-        Label2.Text = "Password"
-        ' 
-        ' txtAGCPassLogin
-        ' 
-        txtAGCPassLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtAGCPassLogin.Location = New Point(1115, 497)
-        txtAGCPassLogin.Margin = New Padding(4, 4, 4, 4)
-        txtAGCPassLogin.Name = "txtAGCPassLogin"
-        txtAGCPassLogin.PlaceholderText = "Password"
-        txtAGCPassLogin.Size = New Size(187, 35)
-        txtAGCPassLogin.TabIndex = 33
-        txtAGCPassLogin.UseSystemPasswordChar = True
+        Label2.Size = New Size(196, 21)
+        Label2.TabIndex = 34
+        Label2.Text = "Don't have an account yet?"
         ' 
         ' AGENCYLoginPage
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
-        Controls.Add(txtAGCPassLogin)
+        Controls.Add(LinkLabel1)
         Controls.Add(Label2)
+        Controls.Add(txtAGCPassLogin)
         Controls.Add(btnOkAGCLoginPg)
         Controls.Add(txtbxAGCIdLogin)
-        Controls.Add(Label1)
-        Controls.Add(btnCloseLoginPg)
+        Controls.Add(btnExit)
         Controls.Add(btnEMPLoginPg)
         Controls.Add(btnAGCLoginPg)
         Controls.Add(btnOFWLoginPg)
         Controls.Add(imgLogoLoginPg)
         Controls.Add(imgLoginPg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 6, 4, 6)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "AGENCYLoginPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "AGENYLoginPage"
-        WindowState = FormWindowState.Maximized
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).EndInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
@@ -200,15 +194,14 @@ Partial Class AGENCYLoginPage
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents btnOkAGCLoginPg As Button
     Friend WithEvents txtbxAGCIdLogin As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btnCloseLoginPg As Button
+    Friend WithEvents btnExit As Button
     Friend WithEvents btnEMPLoginPg As Button
     Friend WithEvents btnAGCLoginPg As Button
     Friend WithEvents btnOFWLoginPg As Button
     Friend WithEvents imgLogoLoginPg As PictureBox
     Friend WithEvents imgLoginPg As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtAGCPassLogin As TextBox
+    Friend WithEvents Label2 As Label
 End Class
 
 
